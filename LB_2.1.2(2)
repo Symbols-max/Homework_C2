@@ -1,0 +1,33 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+
+int main(void) {
+
+float grossprice, taxrate, netprice, taxvalue;
+cout << "Enter a gross price: ";
+cin >> grossprice;
+cout << "Enter a tax rate: ";
+cin >> taxrate;
+if (grossprice<=0){
+    cout << "Enter a true gross price: ";
+cin >> grossprice;
+}
+else cout<<"";
+if (taxrate<=0 || taxrate>100){
+    cout << "Enter a true tax rate: ";
+cin >> taxrate;
+}
+else cout<<"";
+
+taxvalue=grossprice*taxrate/100;
+netprice=grossprice-taxvalue;
+
+cout << "Net price: " << netprice << endl;
+cout << "Tax value: " << taxvalue << endl;
+
+return 0;
+}
