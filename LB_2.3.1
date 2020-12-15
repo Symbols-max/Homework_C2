@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+int c;
+cin>>c;
+int steps=0;
+if(c>0){
+    
+    while(c!=1){
+        steps++;
+    if(c%2==0){
+        c=c/2;
+}
+else {
+    c=3*c+1;
+}
+cout<<c<<endl;
+}
+}
+cout<<"steps="<<steps;
+}
