@@ -1,0 +1,22 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main(void) {
+	int i;
+	int n;
+	int x=2;
+	cin>>n;
+	if(n<=64 && n!=0){
+	    for(i=1;i<n;i++){
+	        x=x*2;
+	    }
+	    cout<<x;
+	}
+	else{
+	    
+	}
+	
+	return 0;
+}
