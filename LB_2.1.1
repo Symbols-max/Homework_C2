@@ -1,0 +1,16 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+
+int main(void) {
+int year;
+cout << "Enter a year: ";
+cin >> year;
+if (year%4!=0 && year%400!=0) cout<<"Year is common";
+else if(year%100!=0)cout<<"Year is leap";
+else cout<<"year is common";
+return 0;
+}
